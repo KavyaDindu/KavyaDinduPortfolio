@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import testImage from "../assets/ProjectExample.png";
+import testImage from "/assets/ProjectExample.png";
 import ProjectItem from "./projectItem";
 import ProjectModal from "./projectModal";
 

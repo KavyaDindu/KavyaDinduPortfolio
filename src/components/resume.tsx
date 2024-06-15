@@ -1,6 +1,6 @@
 
 const Resume = () => {
-  const resumeUrl = "src/assets/testResume.pdf";
+  const resumeUrl = "/assets/testResume.pdf";
 
   return (
     <div id="resume" className="max-w-[1040px] m-auto p-4 py-16 md:pl-20">
