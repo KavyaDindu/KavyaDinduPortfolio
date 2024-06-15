@@ -3,18 +3,10 @@ import { Carousel } from '@mantine/carousel';
 import testImage from "/assets/ProjectExample.png";
 import { IconArrowRight, IconArrowLeft } from '@tabler/icons-react';
 import ProjectItem from "./projectItem";
-import ProjectModal from "./projectModal";
+import ProjectModal, { Project } from "./projectModal";
 import { rem } from "@mantine/core";
 
-interface Project {
-  image: string;
-  title: string;
-  companyName: string;
-  metricValue: number;
-  metricDescription: string;
-  problem: string;
-  solution: string;
-}
+
 
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
