@@ -17,11 +17,11 @@ const AnimatedMetric: React.FC<AnimatedMetricProps> = ({
   });
 
   return (
-    <div className="text-center m-5">
-      <animated.div className="text-2xl font-bold text-[#001b5e]">
+    <div className="text-center m-2 sm:m-3 md:m-4 lg:m-5">
+      <animated.div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#001b5e]">
         {props.value.interpolate((x: number) => `${Math.floor(x)}%`)}
       </animated.div>
-      <div className="text-md text-gray-600">{description}</div>
+      <div className="text-sm sm:text-md md:text-lg text-gray-600">{description}</div>
     </div>
   );
 };
