@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
   }, []); 
 
   return (
-    <div id="projects" className="max-w-[1040px] m-auto px-4 py-16 md:pl-20">
+    <div id="projects" className="max-w-[1040px] m-auto px-4 py-0 md:pl-20">
       <h1 className="text-4xl font-bold text-center text-blue-900 mb-8">
         Projects
       </h1>
