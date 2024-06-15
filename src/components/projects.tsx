@@ -71,6 +71,9 @@ const Projects: React.FC = () => {
       justifyContent: 'center', 
       color: 'white', 
     },
+    indicator:{
+      backgroundColor: 'rgba(0, 0, 0, 0.5)', 
+    }
   }}
         >
           {projects.map((project) => (
