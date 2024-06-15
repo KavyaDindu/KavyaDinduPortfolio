@@ -29,7 +29,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
 
   return (
     <div
-      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4"
+      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center p-4 z-50"
       onClick={handleOutsideClick}
     >
       <div className="bg-white p-5 rounded-lg shadow-2xl flex flex-col w-full max-w-[70vw] max-h-[90vh] relative overflow-auto animate-fadeIn">
