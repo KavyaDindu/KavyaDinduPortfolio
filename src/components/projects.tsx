@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
         title: "Project 2",
         companyName: "Company 2",
         metricValue: 40,
-        metricDescription: "Engagement Increase",
+        metricDescription: "User Engagement Increase",
         problem: "Lorem ipsum dolor sit amet...",
         solution: "Lorem ipsum dolor sit amet...",
       },
