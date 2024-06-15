@@ -1,4 +1,3 @@
-import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { IconBrandLinkedin, IconMail, IconPhone } from "@tabler/icons-react";
 

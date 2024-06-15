@@ -1,4 +1,3 @@
-import React from "react";
 
 const Resume = () => {
   const resumeUrl = "src/assets/testResume.pdf";
