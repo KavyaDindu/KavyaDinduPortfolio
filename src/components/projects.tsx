@@ -21,7 +21,6 @@ const Projects: React.FC = () => {
   const [projects, setProjects] = useState<Project[]>([]);
 
   useEffect(() => {
-    // Simulate fetching project data
     const fetchedProjects: Project[] = [
       {
         image: testImage,
@@ -44,7 +43,7 @@ const Projects: React.FC = () => {
       // More projects...
     ];
     setProjects(fetchedProjects);
-  }, []); // Empty dependency array means this effect runs once on mount
+  }, []); 
 
   return (
     <div id="projects" className="max-w-[1040px] m-auto px-4 py-16 md:pl-20">
@@ -63,14 +62,14 @@ const Projects: React.FC = () => {
           slideGap="lg"
             styles={{
     control: {
-      backgroundColor: 'rgba(0, 0, 0, 0.5)', // This is not a Tailwind class, applied via inline style for specific color.
-      borderRadius: '9999px', // Full rounded corners.
-      width: '50px', // Setting width if needed.
-      height: '50px', // Setting height if needed.
-      display: 'flex', // Using flex to center the icon inside.
-      alignItems: 'center', // Center items vertically.
-      justifyContent: 'center', // Center items horizontally.
-      color: 'white', // Control icon color.
+      backgroundColor: 'rgba(0, 0, 0, 0.5)', 
+      borderRadius: '9999px',
+      width: '50px', 
+      height: '50px', 
+      display: 'flex',
+      alignItems: 'center', 
+      justifyContent: 'center', 
+      color: 'white', 
     },
   }}
         >
