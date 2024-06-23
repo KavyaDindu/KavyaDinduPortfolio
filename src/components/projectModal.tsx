@@ -1,5 +1,5 @@
-import React from 'react';
-import { Carousel } from '@mantine/carousel';
+import React, { useState } from 'react';
+import { Carousel, Embla, useAnimationOffsetEffect } from '@mantine/carousel';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import AnimatedMetric from './animatedMetric';
@@ -21,6 +21,7 @@ interface ProjectModalProps {
 }
 
 const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
+    const [embla, setEmbla] = useState<Embla | null>(null);
     if (!project) return null;
 
     const handleOutsideClick = (
@@ -30,7 +31,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
             onClose();
         }
     };
-
+    useAnimationOffsetEffect(embla, 500);
     return (
         <div
             className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center px-2 sm:px-4 py-2 z-50"
@@ -64,9 +65,10 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) => {
                             loop
                             slideGap="xl"
                             align="center"
+                            getEmblaApi={setEmbla}
                         >
                             {project.images.map((image, index) => (
-                                <Carousel.Slide key={index}>
+                                <Carousel.Slide key={index} maw="100%">
                                     <Zoom>
                                         <img
                                             src={image}
