@@ -83,7 +83,7 @@ export const projectData: Project[] = [
         solution: 'Lorem ipsum dolor sit amet...',
     },
     {
-        mainImage: Assets.ResearchVOC[0],
+        mainImage: Assets.ResearchVOC[2],
         images: Assets.ResearchVOC,
         title: 'Research VOC',
         companyName: 'Service Channel',

@@ -56,7 +56,10 @@ const Projects: React.FC = () => {
                     }}
                 >
                     {projects.map((project) => (
-                        <Carousel.Slide key={project.title}>
+                        <Carousel.Slide
+                            key={project.title}
+                            className="flex justify-center items-center"
+                        >
                             <ProjectItem
                                 image={project.mainImage}
                                 title={project.title}
